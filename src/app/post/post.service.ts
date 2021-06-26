@@ -9,7 +9,7 @@ import { Post } from './post';
 })
 export class PostService {
 
-  private url: string = 'http://localhost:3000/posts';
+  private url: string = '//' + window.location.hostname + ':3000/posts';
 
   private sortCondition = '_sort=id&_order=desc';
 
